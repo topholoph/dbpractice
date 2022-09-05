@@ -35,7 +35,7 @@ public class DatabaseConnector {
 
 		try {
 			connection = Database.getConnection(dbUrl, user, password);
-			ausgabe = "Datgenbank CXonnection erfolgreich:";
+			ausgabe = "Datenbank Connection erfolgreich:";
 
 			// Let's Make a Plan
 			// 1. Create SQL for PreparedStatement using Parameters
@@ -70,9 +70,7 @@ public class DatabaseConnector {
 			Database.closePreparedStatement(preparedStatement);
 			Database.closeConnection(connection);
 		}
-
 		return ausgabe;
-
 	}
 //	public static String alleBenutzer() {
 //	
